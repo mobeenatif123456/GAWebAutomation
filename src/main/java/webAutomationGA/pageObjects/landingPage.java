@@ -30,10 +30,16 @@ public class landingPage extends abstractComponent {
 	@FindBy(xpath="//input[@type='submit']")
 	WebElement nextButton;
 	
-	@FindBy(xpath="//input[@type='password']")
+	@FindBy(xpath="//input[@name='password']")
 	WebElement userPassword;
 	
-	By passwordVisible= By.xpath("//input[@type='password']");
+	@FindBy(xpath="//div[text()='Log in']")
+	WebElement loginButton;
+	
+	By passwordVisible= By.xpath("//input[@name='password']");
+	
+	@FindBy(xpath="(//p[text()='Go to your product']/..//p)[2]")
+	WebElement goToLiveChat;
 	
 	public void login(String email,String password) throws InterruptedException {
 		
@@ -41,20 +47,20 @@ public class landingPage extends abstractComponent {
 		waitforElementDisplayed(emailVisible);
 		userEmail.sendKeys(email);
 		Thread.sleep(1000);
-		nextButton.click();
-		waitforElementDisplayed(passwordVisible);
 		userPassword.sendKeys(password);
 		Thread.sleep(1000);
-		nextButton.click();
-		waitforElementDisplayed(By.xpath("//input[@type='submit']"));
+		waitforElementDisplayed(By.xpath("//div[text()='Log in']"));
 		Thread.sleep(1000);
-		nextButton.click();
+		loginButton.click();
+		waitforElementDisplayed(By.xpath("(//p[text()='Go to your product']/..//p)[2]"));
+		goToLiveChat.click();
+		Thread.sleep(1000);
 		
 		
 	}
 	
 	public void goTo() {
-		driver.get("https://preprod.ga.adp.cariad.digital/");
+		driver.get("https://accounts.livechat.com/");
 	}
 	
 

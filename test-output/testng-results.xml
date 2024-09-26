@@ -1,58 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="1" total="5" passed="2" failed="1" skipped="0">
+<testng-results retried="1" ignored="1" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-07T13:45:20 PKT" name="Suite" finished-at="2024-04-07T13:50:33 PKT" duration-ms="313235">
+  <suite started-at="2024-09-26T03:27:23 PKT" name="Default suite" finished-at="2024-09-26T03:30:18 PKT" duration-ms="174758">
     <groups>
       <group name="smokeTests">
-        <method signature="loginScenario.loginSuccess()[pri:0, instance:webAutomationGA.Tests.loginScenario@7fb95505]" name="loginSuccess" class="webAutomationGA.Tests.loginScenario"/>
-        <method signature="createCampaign.createCampaignwithoutGroups()[pri:0, instance:webAutomationGA.Tests.createCampaign@6436a7db]" name="createCampaignwithoutGroups" class="webAutomationGA.Tests.createCampaign"/>
+        <method signature="loginScenario.loginSuccess()[pri:0, instance:webAutomationGA.Tests.loginScenario@f6efaab]" name="loginSuccess" class="webAutomationGA.Tests.loginScenario"/>
       </group> <!-- smokeTests -->
     </groups>
-    <test started-at="2024-04-07T13:45:20 PKT" name="login scenario" finished-at="2024-04-07T13:49:41 PKT" duration-ms="260885">
+    <test started-at="2024-09-26T03:27:23 PKT" name="Default test" finished-at="2024-09-26T03:30:18 PKT" duration-ms="174758">
       <class name="webAutomationGA.Tests.loginScenario">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:webAutomationGA.Tests.loginScenario@7fb95505]" started-at="2024-04-07T13:45:20 PKT" name="launchApplication" finished-at="2024-04-07T13:45:31 PKT" duration-ms="10435" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:webAutomationGA.Tests.loginScenario@f6efaab]" started-at="2024-09-26T03:27:23 PKT" name="launchApplication" finished-at="2024-09-26T03:27:31 PKT" duration-ms="7784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="loginSuccess()[pri:0, instance:webAutomationGA.Tests.loginScenario@7fb95505]" started-at="2024-04-07T13:45:31 PKT" name="loginSuccess" description="Verify login with correct credentials is working" finished-at="2024-04-07T13:46:12 PKT" duration-ms="41368" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginSuccess -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:webAutomationGA.Tests.loginScenario@7fb95505]" started-at="2024-04-07T13:46:12 PKT" name="closeBrowser" finished-at="2024-04-07T13:46:12 PKT" duration-ms="128" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:webAutomationGA.Tests.loginScenario@7fb95505]" started-at="2024-04-07T13:46:12 PKT" name="launchApplication" finished-at="2024-04-07T13:46:18 PKT" duration-ms="5802" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="loginFailure()[pri:1, instance:webAutomationGA.Tests.loginScenario@7fb95505]" started-at="2024-04-07T13:46:18 PKT" name="loginFailure" description="Verify login with incorrect credentials is not working" finished-at="2024-04-07T13:47:56 PKT" duration-ms="98135" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method retried="true" signature="loginSuccess()[pri:0, instance:webAutomationGA.Tests.loginScenario@f6efaab]" started-at="2024-09-26T03:27:31 PKT" name="loginSuccess" description="Verify login with correct credentials is working" finished-at="2024-09-26T03:28:43 PKT" duration-ms="72820" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //h1[text()='Campaigns'] (tried for 90 second(s) with 500 milliseconds interval)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":".//span[@class='user-name']"}
+  (Session info: chrome=129.0.6668.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\MOBEEN~1.ATI\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61903}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61903/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d47d7f23f29bf8672d459dd7e950611f]]>
+Command: [53da2d16e7ffa21b66d713680956f189, findChildElement {id=f.589BCFD0777E7C0199CD6EB772DA7629.d.DEE07C248A96DECD6F60D5118643BF60.e.141, value=.//span[@class='user-name'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\mobeena\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52128}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52128/devtoo..., se:cdpVersion: 129.0.6668.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53da2d16e7ffa21b66d713680956f189]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h1[text()='Campaigns'] (tried for 90 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//span[@class='user-name']"}
+  (Session info: chrome=129.0.6668.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\MOBEEN~1.ATI\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61903}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61903/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d47d7f23f29bf8672d459dd7e950611f
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at webAutomationGA.abstractComponents.abstractComponent.waitforElementDisplayed(abstractComponent.java:25)
-at webAutomationGA.pageObjects.dashboardPage.dashboardVerification(dashboardPage.java:37)
-at webAutomationGA.Tests.loginScenario.loginFailure(loginScenario.java:26)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+Command: [53da2d16e7ffa21b66d713680956f189, findChildElement {id=f.589BCFD0777E7C0199CD6EB772DA7629.d.DEE07C248A96DECD6F60D5118643BF60.e.141, value=.//span[@class='user-name'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\mobeena\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52128}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52128/devtoo..., se:cdpVersion: 129.0.6668.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53da2d16e7ffa21b66d713680956f189
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211)
+at webAutomationGA.pageObjects.dashboardPage.getChats(dashboardPage.java:97)
+at webAutomationGA.Tests.loginScenario.loginSuccess(loginScenario.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
@@ -61,7 +63,7 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:819)
 at org.testng.TestRunner.run(TestRunner.java:619)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
@@ -75,48 +77,63 @@ at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
 at org.testng.TestNG.runSuites(TestNG.java:1134)
 at org.testng.TestNG.run(TestNG.java:1101)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginFailure -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:webAutomationGA.Tests.loginScenario@7fb95505]" started-at="2024-04-07T13:47:56 PKT" name="closeBrowser" finished-at="2024-04-07T13:47:56 PKT" duration-ms="88" status="PASS">
+        </test-method> <!-- loginSuccess -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:webAutomationGA.Tests.loginScenario@f6efaab]" started-at="2024-09-26T03:28:43 PKT" name="closeBrowser" finished-at="2024-09-26T03:28:44 PKT" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:webAutomationGA.Tests.loginScenario@7fb95505]" started-at="2024-04-07T13:47:56 PKT" name="launchApplication" finished-at="2024-04-07T13:48:03 PKT" duration-ms="6163" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:webAutomationGA.Tests.loginScenario@f6efaab]" started-at="2024-09-26T03:28:44 PKT" name="launchApplication" finished-at="2024-09-26T03:28:48 PKT" duration-ms="3976" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="loginFailure()[pri:1, instance:webAutomationGA.Tests.loginScenario@7fb95505]" started-at="2024-04-07T13:48:03 PKT" name="loginFailure" description="Verify login with incorrect credentials is not working" finished-at="2024-04-07T13:49:40 PKT" duration-ms="97634" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="loginSuccess()[pri:0, instance:webAutomationGA.Tests.loginScenario@f6efaab]" started-at="2024-09-26T03:28:48 PKT" name="loginSuccess" description="Verify login with correct credentials is working" finished-at="2024-09-26T03:30:17 PKT" duration-ms="89791" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //h1[text()='Campaigns'] (tried for 90 second(s) with 500 milliseconds interval)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":".//span[@class='user-name']"}
+  (Session info: chrome=129.0.6668.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\MOBEEN~1.ATI\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62118}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62118/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 82ad6d97e2f4aacbcd1d70935ca74db5]]>
+Command: [0cb4dc2ec53a9fb2b9f9a3ad4c5af126, findChildElement {id=f.1075DCA432179D03477F2BDEED78A17C.d.D9D42A21A653AC53EF2FB6FC63583D65.e.129, value=.//span[@class='user-name'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\mobeena\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52281}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52281/devtoo..., se:cdpVersion: 129.0.6668.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0cb4dc2ec53a9fb2b9f9a3ad4c5af126]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h1[text()='Campaigns'] (tried for 90 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//span[@class='user-name']"}
+  (Session info: chrome=129.0.6668.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\MOBEEN~1.ATI\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62118}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62118/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 82ad6d97e2f4aacbcd1d70935ca74db5
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at webAutomationGA.abstractComponents.abstractComponent.waitforElementDisplayed(abstractComponent.java:25)
-at webAutomationGA.pageObjects.dashboardPage.dashboardVerification(dashboardPage.java:37)
-at webAutomationGA.Tests.loginScenario.loginFailure(loginScenario.java:26)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+Command: [0cb4dc2ec53a9fb2b9f9a3ad4c5af126, findChildElement {id=f.1075DCA432179D03477F2BDEED78A17C.d.D9D42A21A653AC53EF2FB6FC63583D65.e.129, value=.//span[@class='user-name'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\mobeena\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52281}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52281/devtoo..., se:cdpVersion: 129.0.6668.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0cb4dc2ec53a9fb2b9f9a3ad4c5af126
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211)
+at webAutomationGA.pageObjects.dashboardPage.getChats(dashboardPage.java:97)
+at webAutomationGA.Tests.loginScenario.loginSuccess(loginScenario.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
 at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
@@ -125,7 +142,7 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:819)
 at org.testng.TestRunner.run(TestRunner.java:619)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
@@ -139,35 +156,19 @@ at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
 at org.testng.TestNG.runSuites(TestNG.java:1134)
 at org.testng.TestNG.run(TestNG.java:1101)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginFailure -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:webAutomationGA.Tests.loginScenario@7fb95505]" started-at="2024-04-07T13:49:41 PKT" name="closeBrowser" finished-at="2024-04-07T13:49:41 PKT" duration-ms="92" status="PASS">
+        </test-method> <!-- loginSuccess -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:webAutomationGA.Tests.loginScenario@f6efaab]" started-at="2024-09-26T03:30:17 PKT" name="closeBrowser" finished-at="2024-09-26T03:30:18 PKT" duration-ms="171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- webAutomationGA.Tests.loginScenario -->
-    </test> <!-- login scenario -->
-    <test started-at="2024-04-07T13:49:41 PKT" name="campaign" finished-at="2024-04-07T13:50:33 PKT" duration-ms="52250">
-      <class name="webAutomationGA.Tests.createCampaign">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:webAutomationGA.Tests.createCampaign@6436a7db]" started-at="2024-04-07T13:49:41 PKT" name="launchApplication" finished-at="2024-04-07T13:49:46 PKT" duration-ms="5396" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createCampaignwithoutGroups()[pri:0, instance:webAutomationGA.Tests.createCampaign@6436a7db]" started-at="2024-04-07T13:49:46 PKT" name="createCampaignwithoutGroups" description="Verify campaign creation functionality is working" finished-at="2024-04-07T13:50:33 PKT" duration-ms="46726" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createCampaignwithoutGroups -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:webAutomationGA.Tests.createCampaign@6436a7db]" started-at="2024-04-07T13:50:33 PKT" name="closeBrowser" finished-at="2024-04-07T13:50:33 PKT" duration-ms="107" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- webAutomationGA.Tests.createCampaign -->
-    </test> <!-- campaign -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

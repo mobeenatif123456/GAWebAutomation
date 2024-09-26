@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webAutomationGA.Tests.createCampaign">
+      <class name="webAutomationGA.Tests.loginScenario">
         <methods>
-          <include name="config"/>
-          <include name="createCampaignwithoutGroups"/>
+          <include name="loginSuccess"/>
           <include name="closeBrowser"/>
           <include name="launchApplication"/>
         </methods>
-      </class> <!-- webAutomationGA.Tests.createCampaign -->
+      </class> <!-- webAutomationGA.Tests.loginScenario -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

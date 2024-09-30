@@ -52,8 +52,9 @@ public class landingPage extends abstractComponent {
 		waitforElementDisplayed(By.xpath("//div[text()='Log in']"));
 		Thread.sleep(1000);
 		loginButton.click();
+		
 		waitforElementDisplayed(By.xpath("(//p[text()='Go to your product']/..//p)[2]"));
-		goToLiveChat.click();
+	    goToLiveChat.click();
 		Thread.sleep(1000);
 		
 		

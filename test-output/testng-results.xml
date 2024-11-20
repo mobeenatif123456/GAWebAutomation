@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-20T15:04:07 PKT" name="Default suite" finished-at="2024-11-20T15:06:03 PKT" duration-ms="116193">
+  <suite started-at="2024-11-21T00:19:07 PKT" name="Default suite" finished-at="2024-11-21T00:22:11 PKT" duration-ms="184681">
     <groups>
       <group name="smokeTests">
-        <method signature="bradReportPage.dropdownVisible()[pri:0, instance:webAutomationGA.Tests.bradReportPage@411f53a0]" name="dropdownVisible" class="webAutomationGA.Tests.bradReportPage"/>
-        <method signature="bradReportPage.availableColumnValues()[pri:1, instance:webAutomationGA.Tests.bradReportPage@411f53a0]" name="availableColumnValues" class="webAutomationGA.Tests.bradReportPage"/>
+        <method signature="bradReportPage.channelFilter()[pri:0, instance:webAutomationGA.Tests.bradReportPage@248e319b]" name="channelFilter" class="webAutomationGA.Tests.bradReportPage"/>
+        <method signature="bradReportPage.filters()[pri:0, instance:webAutomationGA.Tests.bradReportPage@248e319b]" name="filters" class="webAutomationGA.Tests.bradReportPage"/>
       </group> <!-- smokeTests -->
     </groups>
-    <test started-at="2024-11-20T15:04:07 PKT" name="Default test" finished-at="2024-11-20T15:06:03 PKT" duration-ms="116193">
+    <test started-at="2024-11-21T00:19:07 PKT" name="Default test" finished-at="2024-11-21T00:22:11 PKT" duration-ms="184681">
       <class name="webAutomationGA.Tests.bradReportPage">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:webAutomationGA.Tests.bradReportPage@411f53a0]" started-at="2024-11-20T15:04:07 PKT" name="launchApplication" finished-at="2024-11-20T15:04:12 PKT" duration-ms="4869" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:webAutomationGA.Tests.bradReportPage@248e319b]" started-at="2024-11-21T00:19:07 PKT" name="launchApplication" finished-at="2024-11-21T00:19:11 PKT" duration-ms="4704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:webAutomationGA.Tests.bradReportPage@411f53a0]" started-at="2024-11-20T15:04:12 PKT" name="setup" finished-at="2024-11-20T15:05:57 PKT" duration-ms="105532" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webAutomationGA.Tests.bradReportPage@248e319b]" started-at="2024-11-21T00:19:11 PKT" name="setup" finished-at="2024-11-21T00:20:19 PKT" duration-ms="67994" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="dropdownVisible()[pri:0, instance:webAutomationGA.Tests.bradReportPage@411f53a0]" started-at="2024-11-20T15:05:57 PKT" name="dropdownVisible" description="Verify brad report dropdowns are present" finished-at="2024-11-20T15:06:01 PKT" duration-ms="4051" status="PASS">
+        <test-method signature="channelFilter()[pri:0, instance:webAutomationGA.Tests.bradReportPage@248e319b]" started-at="2024-11-21T00:20:19 PKT" name="channelFilter" description="Verify brad report year/channel filter is working" finished-at="2024-11-21T00:21:08 PKT" duration-ms="48935" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dropdownVisible -->
-        <test-method signature="availableColumnValues()[pri:1, instance:webAutomationGA.Tests.bradReportPage@411f53a0]" started-at="2024-11-20T15:06:01 PKT" name="availableColumnValues" description="Verify values under available columns are present" finished-at="2024-11-20T15:06:03 PKT" duration-ms="1242" status="PASS">
+        </test-method> <!-- channelFilter -->
+        <test-method signature="filters()[pri:0, instance:webAutomationGA.Tests.bradReportPage@248e319b]" started-at="2024-11-21T00:21:08 PKT" name="filters" description="Verify brad report filters are working" finished-at="2024-11-21T00:22:11 PKT" duration-ms="62787" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- availableColumnValues -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:webAutomationGA.Tests.bradReportPage@411f53a0]" started-at="2024-11-20T15:06:03 PKT" name="closeBrowser" finished-at="2024-11-20T15:06:03 PKT" duration-ms="423" status="PASS">
+        </test-method> <!-- filters -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:webAutomationGA.Tests.bradReportPage@248e319b]" started-at="2024-11-21T00:22:11 PKT" name="closeBrowser" finished-at="2024-11-21T00:22:11 PKT" duration-ms="215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

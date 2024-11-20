@@ -5,8 +5,7 @@
     <classes>
       <class name="webAutomationGA.Tests.bradReportPage">
         <methods>
-          <include name="availableColumnValues"/>
-          <include name="dropdownVisible"/>
+          <include name="filters"/>
           <include name="setup"/>
           <include name="closeBrowser"/>
           <include name="launchApplication"/>

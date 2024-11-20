@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webAutomationGA.Tests.loginScenario">
+      <class name="webAutomationGA.Tests.bradReportPage">
         <methods>
-          <include name="loginSuccess"/>
+          <include name="availableColumnValues"/>
+          <include name="dropdownVisible"/>
+          <include name="setup"/>
           <include name="closeBrowser"/>
           <include name="launchApplication"/>
         </methods>
-      </class> <!-- webAutomationGA.Tests.loginScenario -->
+      </class> <!-- webAutomationGA.Tests.bradReportPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -22,46 +22,77 @@ public class landingPage extends abstractComponent {
 	}
 	
 	
-	@FindBy(xpath="//input[@type='email']")
+	@FindBy(xpath="//input[@id='email']")
 	WebElement userEmail;
+
+	@FindBy(xpath="//input[@value='Verify']")
+	WebElement verify;
+	
+	@FindBy(xpath="(//a[text()='Select'])[1]")
+	WebElement select;
+	
+	@FindBy(xpath="//input[@value='Continue']")
+	WebElement continueButton;
+	
+	@FindBy(xpath="//input[@value='Yes']")
+	WebElement yesSignInButton;
 	
 	By emailVisible= By.xpath("//input[@type='email']");
 	
-	@FindBy(xpath="//input[@type='submit']")
+	@FindBy(xpath="//button[text()='Submit']")
 	WebElement nextButton;
 	
-	@FindBy(xpath="//input[@name='password']")
+	@FindBy(xpath="//input[@type='password']")
 	WebElement userPassword;
 	
-	@FindBy(xpath="//div[text()='Log in']")
-	WebElement loginButton;
+	@FindBy(xpath="//input[@type='submit']")
+	WebElement emailNextButton;
 	
-	By passwordVisible= By.xpath("//input[@name='password']");
 	
-	@FindBy(xpath="(//p[text()='Go to your product']/..//p)[2]")
-	WebElement goToLiveChat;
+	@FindBy(xpath="//span[text()='Home']")
+	WebElement powerBIHome;
 	
 	public void login(String email,String password) throws InterruptedException {
 		
 		
-		waitforElementDisplayed(emailVisible);
+		waitforElementDisplayed(By.xpath("//input[@id='email']"));
 		userEmail.sendKeys(email);
 		Thread.sleep(1000);
-		userPassword.sendKeys(password);
+		waitforElementDisplayed(By.xpath("//button[text()='Submit']"));
 		Thread.sleep(1000);
-		waitforElementDisplayed(By.xpath("//div[text()='Log in']"));
-		Thread.sleep(1000);
-		loginButton.click();
+		nextButton.click();
 		
-		waitforElementDisplayed(By.xpath("(//p[text()='Go to your product']/..//p)[2]"));
-	    goToLiveChat.click();
-		Thread.sleep(1000);
+		waitforElementDisplayed(By.xpath("//input[@type='submit']"));
+		emailNextButton.click();
+		Thread.sleep(20000);
+		
+		waitforElementDisplayed(By.xpath("//input[@type='password']"));
+		userPassword.sendKeys(password);
+		
+		waitforElementDisplayed(By.xpath("//input[@value='Verify']"));
+		verify.click();
+		
+		waitforElementDisplayed(By.xpath("(//a[text()='Select'])[1]"));
+		select.click();
+		
+		Thread.sleep(20000);
+		
+		waitforElementDisplayed(By.xpath("//input[@value='Verify']"));
+		verify.click();
+		
+		waitforElementDisplayed(By.xpath("//input[@value='Continue']"));
+		continueButton.click();
+		
+		waitforElementDisplayed(By.xpath("//input[@value='Yes']"));
+		yesSignInButton.click();
+		
+		waitforElementDisplayed(By.xpath("//span[text()='Home']"));
 		
 		
 	}
 	
 	public void goTo() {
-		driver.get("https://accounts.livechat.com/");
+		driver.get("https://app.powerbi.com/singleSignOn?experience=power-bi&ru=https%3A%2F%2Fapp.powerbi.com%2Fgroups%2F2d069fe6-e945-4e4b-922f-0fdc9b348db9%2Freports%2F4437ad1f-578c-46f1-95fa-d324c5ccd18d%2FReportSection%3Fexperience%3Dpower-bi%26noSignUpCheck%3D1");
 	}
 	
 

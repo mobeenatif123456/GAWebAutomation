@@ -20,9 +20,9 @@
     </classes>
   </test> <!-- Test -->
   
-  <test thread-count="5" name="campaign">
+  <test thread-count="5" name="Brad report">
     <classes>
-      <class name="webAutomationGA.Tests.createCampaign"/>
+      <class name="webAutomationGA.Tests.bradReportPage"/>
     </classes>
   </test> <!-- Test -->
   
